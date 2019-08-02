@@ -1,0 +1,9 @@
+class Collatz
+{
+    int number; // 숫자를 저장하기 위한 변수
+    Collatz : number(number) {}
+
+    int returnLoopNum();
+    // 주어진 숫자에 대해서 몇번 반복했는지 반환시킨다.
+    // 단 500번 이상인 경우 -1을 반환시킨다.
+}

@@ -1,0 +1,13 @@
+class Joistick
+{
+    private :
+    string myName; // 이름을 저장시킬 변수
+
+    public :
+    Joistick(string myName); 
+    
+    private :
+    int getMinimum(); // 조이스틱을 움직여서 최소가 되는 그 값을 구하는 함수
+    bool isRightFast(); // 오른쪽이 빠른가? 왼쪽이 빠른가?  // 오른쪽이 빠른가? 왼쪽이 빠른가? 
+    int minTryChar()
+}

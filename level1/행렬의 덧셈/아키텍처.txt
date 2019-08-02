@@ -1,0 +1,10 @@
+class Matrix
+{
+    private :
+    vector<vector<int>> matrix; // 행렬을 저장하기 위한 변수
+
+    public :
+    vector<vector<int>> operator+ (const Matrix& matrix2)
+    // + 연산을 할 경우 두 행렬을 더한 값을 반환시킨다.
+
+}

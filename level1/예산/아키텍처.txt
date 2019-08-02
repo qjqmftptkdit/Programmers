@@ -1,0 +1,12 @@
+class Budget
+{
+    private :
+    vecter<int> department; // 각 부서별로 필요한 예산이 들어간 배열
+    int budget; // 주어진 예산
+
+    private :
+    int sortDepartment(vector<int> department); // 주어진 예산을 오름차순으로 정렬시킨다.
+
+    public :
+    int getMaxDepartment(); // 지원가능한 최대의 부서를 구한다.
+}

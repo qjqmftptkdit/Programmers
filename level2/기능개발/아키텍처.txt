@@ -1,0 +1,8 @@
+class progress
+{
+    plivate :
+    vector<int> progresses; // 프로그램의 진행정도 및 우선순위
+    vector<int> speeds; // 하루당 진행할 수 있는 정도
+
+    vector<int> getDistribute(); // 몇개의 기능이 배포되는지 반환시킨다.
+}

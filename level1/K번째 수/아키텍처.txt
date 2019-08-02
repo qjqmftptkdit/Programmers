@@ -1,0 +1,13 @@
+class KNumber
+{
+    private :
+    vector<int> array; // 대상이 되는 베열
+    vector<<vector>int> commands; // [i,j,k] 가 저장된 배열
+
+    public :
+    vector<int> getKNumber(); // k번째 수를 구한다.
+
+    private :
+    parseCommand(vector<int>, int &i, int j&, int &k); // 단일 command를 i,j,k에 대응시킨다.
+    sortCommand(vector<int>); // 백터를 정렬시킨다.
+}

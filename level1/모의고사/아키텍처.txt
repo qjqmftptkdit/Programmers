@@ -1,0 +1,20 @@
+class MathSolve
+{
+    private :
+        vector<int> answers; // 정답이 들어있는 배열
+
+        vector<int> person1; // 첫번째 사람이 찍는 패턴
+        vector<int> person2; // 두번째 사람이 찍는 패턴
+        vector<int> person3; // 세번째 사람이 찍는 패턴
+
+    public :
+        vector<int> getPerson(); // 가장 많이 맞춘 사람은?
+
+    private :
+        bool itPerson1Correct(int number); // 해당 번호 문제를 첫번째 사람은 맞췄는가?
+        bool itPerson2Correct(int number); // 해당 번호 문제를 두번째 사람은 맞췄는가?
+        bool itPerson3Correct(int number); // 해당 번호 문제를 세번째 사람은 맞췄는가?
+
+        int getMaxAnswers(vector<int> answers); // answers에서 얻어지는 최대값을 반환한다.
+        vector<int> findIndexInAnswers(int find, vector<int> answers); // 특정 백터에서 해당 값이 발견되는 인덱스를 반환한다. // 단, 여러개이면 오름차순으로 반환한다.
+}
