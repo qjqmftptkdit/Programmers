@@ -1,0 +1,13 @@
+class EndToEnd
+{
+    private :
+        int numOfPerson; // 참여하는 사람의 수
+        vecter<string> words; // 참여한 사람들이 말한 단어 리스트
+
+    public :
+        EndToEnd(int numOfPerson, vector<string> words); // 생성자
+        vector<int> getResult(); // 탈락한 사람의 번호, 몇번째 차례에 탈락했는지 반환
+        
+        bool isRightWord(string word1, string word2); // word1단어 다음에 word2단어를 말하는 것이 옳으면 true, 아니면 false.
+        bool isDupWord(vector<string> words, string word, int wordIndex);  // wodIndex에 위차한 word가 words에 있어서, wordIndex이전에 동일한 단어가 있으면 true, 아니면 false
+}
