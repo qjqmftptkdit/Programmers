@@ -1,0 +1,12 @@
+class NoDropPrice
+{
+    private:
+        vector<int> prices; // 초당 가격이 담긴 배열
+    
+    public:
+        NoDropPrice(vector<int> prices); // 생성자
+        vector<int> getResult(); // 각 시기에 대해 가격이 떨어지지 않은 기간을 반환
+
+    private:
+        int getOneResult(vector<int> prices, int index); // 단일 값에 대하여 계산한다.
+}
