@@ -1,0 +1,14 @@
+class Get124
+{
+    private :
+    int number; // 10진수 자연수 n을 저장
+
+    public :
+    Get124(int number); // 생성자
+    string getResult(); // 124나라의 숫자로 변환된 결과를 반환
+
+    private :
+    int getDigit(int number); // 해당 10진법 number가 124나라의 숫자로 변환되었을 경우의 자릿수를 반환한다.
+    string get124Num(int number, int digist); // 10진법 number와 124나라로 변환되었을 경우의 자릿수를 입력받으면, 124나라로 변환된 결과를 반환한다.
+    string get124NumFromremainder(int number); // 나머지로 반환된 숫자를 124나라의 숫자로 변환한다.
+}
