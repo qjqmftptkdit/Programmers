@@ -1,0 +1,14 @@
+class Marathon
+{
+    private :
+    vector<string> participant; // 참여한 사람들
+    vector<string> completion; // 완주한 사람들
+
+    public :
+    Marathon(vector<string> participant, vector<string> completion); // 생성자
+    string getResult(); // 완주하지 못한 사람을 반환한다.
+
+    private :
+    map<string, int> getCompletionMap(vector<string> completion); // completion를 Key-Value쌍으로 만들어서 반환한다.
+    string checkParticipantWithMap(vector<string> participant, map<string, int> completionMap); // participant과 map을 비교해서, map이 없는 대상을 반환한다.
+}

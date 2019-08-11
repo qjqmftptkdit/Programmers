@@ -1,0 +1,5 @@
+todo :
+    ✔ Class Marathon을 구현한다. @done(19-08-11 13:48)
+        ✔ Case 1 : ([leo, kiki, eden], [eden, kiki]) -> "leo" @done(19-08-11 13:48)
+        ✔ Case 2 : ([marina, josipa, nikola, vinko, filipa], [josipa, filipa, marina, nikola]) -> "vinko" @done(19-08-11 13:48)
+        ✔ Case 3 : ([mislav, stanko, mislav, ana], [stanko, ana, mislav]) -> "mislav" @done(19-08-11 13:48)
