@@ -1,0 +1,4 @@
+todo : 
+    ✔ SortStrings class 를 구현한다. @done(19-08-13 18:20)
+        ✔ Case 1 : ([sun, bed, car], 1) -> [car, bed, sun] @done(19-08-13 18:20)
+        ✔ Case 2 : ([abce, abcd, cdx], 2) -> [abcd, abce, cdx] @done(19-08-13 18:20)
