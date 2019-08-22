@@ -1,0 +1,62 @@
+// 그래프에서 사용하기 위한 Node 클래스
+class Node 
+{
+    private :
+    string word; // 단어를 저장한다.
+    Node* next; // 다음 노드를 연결한다.
+
+    public :
+    Node(string word, Node& next); // 노드 초기화
+    string getWord(); // 저장된 단어를 얻는다.
+    Node* getNextptr(); // 저장된 포인터를 얻는다.
+    void setNextptr(Node* nextPtr); // 포인터를 설정한다.
+}
+
+// 그래프 클래스
+class Graph
+{
+    private :
+    vector<Node> nodes; // 노드 배열을 저장한다.
+    int totalNum; // 총 갯수를 저장한다.
+
+    public :
+    Graph(string begin, vector<string> words); // 각 begin과 words에 대한 그래프노드를 생성해서 초기화시킨다.
+    int getTotalNum() ; // 이 그래프 노드의 총 갯수를 반환한다.
+    vector<Node> getNodes() ; // Node 배열을 반환한다.
+    Node getNode(string target); // target을 word로 가진 node를 반환한다.
+    void setVisited(string target); // target을 True로 변경시킨다. 
+    bool getVisited(string target); // target의 True/False 여부를 반환시킨다.
+
+    private :
+    // 처음으로 노드를 초기화 시킨다.
+    vector<Node> initNodes(string begin, vector<string> words, int totalNum);
+    // 해당 단어와 다른 target단어가 관계를 가지고 있는지 확인한다.
+    // 관계를 가지고 있음 : true, 관계가 없음 : false
+    bool isProper(string word, string target); 
+    // nodes에 속한 target문자열을 가진 특정 node에 word가진 노드를 생성하여 연결시킨다.
+    void insertNode(Node& target, string word));
+
+    // visited를 초기화 시킨다.
+    map<string, bool> initVisited(string begin, vector<string> words);
+}
+
+class WordTransition
+{
+    private :
+    string begin; // 시작할때의 단어
+    string target; // 목표 단어
+    vector<string> words; // 변환 가능한 단어 리스트
+
+    public :
+    WordTransition(string begin, string target, vector<string> words);
+    int getResult(); // 최소 변환 횟수를 반환한다.
+
+    private :
+    // words안에 target이 있어서 변환이 가능한지 확인한다.
+    // 변환이 가능 : true, 변환이 불가능 : false 
+    bool isAvailable(string target, vector<string> words) 
+    // 해당 노드와 연결된 노드들이 모두 방문되었는지에 대한 여부를 반환한다.
+    bool isHaveUnvisitedNode(Node* node_next, Graph graph);
+    // 해당 타겟단어에 도달하기 위한 최소 횟수를 DFS를 통해서 알아낸다.
+    int startDfsForTarget(string target)
+};

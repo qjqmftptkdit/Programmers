@@ -1,0 +1,7 @@
+todo :
+    ✔ Node, Graph 클래스를 구현한다. @done(19-08-21 20:14)
+        ✔ Case 1 : ("hit", ["hot","hog","lot"]) -> 알맞은 그래프 출력 @done(19-08-21 20:14)
+    ✔ WordTrasition 클래스를 구현한다. @done(19-08-22 18:01)
+        ✔ Case 1 : ("hit", "hog", ["hot","hog","lot"]) -> 2 @done(19-08-22 18:01)
+        ✔ Case 2 : ("hit", "cog", ["hot", "dot", "dog", "lot", "log", "cog"]) -> 4 @done(19-08-22 18:01)
+        ✔ Case 3 : ("hit", "cog", ["hot", "dot", "dog", "lot", "log"]) -> 0 @done(19-08-22 18:01)
