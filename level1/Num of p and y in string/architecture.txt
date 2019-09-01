@@ -1,0 +1,12 @@
+class CheckString
+{
+    private :
+    string word; // Provided word.
+
+    public :
+    CheckString(string word); // Constructor
+    bool getResult(); 
+
+    private :
+    int getNumOfChar(string word, char target); // Get num of target in word
+}

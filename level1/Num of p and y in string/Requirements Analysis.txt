@@ -1,0 +1,5 @@
+1. If num of p and num of y are the same in the string, It should return true, otherwise It should return false.
+    1-1. If num of p and y is zero, It should return true.
+    1-2. There is not distinguish between lower and upper.
+    ex1. "pPooyY" -> true # p:2 , y:2
+    ex2. "Pyy" -> false # p:1 , y:2 

@@ -1,0 +1,4 @@
+todo :
+    ✔ Create CheckString class @done(19-09-01 09:25)
+        ✔ Case 1 : "pPooyY" -> true @done(19-09-01 09:25)
+        ✔ Case 2 : "Pyy" -> false @done(19-09-01 09:25)
