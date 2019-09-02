@@ -1,0 +1,14 @@
+// Get the biggist number by connecting numbers in array
+class theBiggistNumber {
+    private :
+    vector<int> numberArray; 
+
+    public :
+    theBiggistNumber(vector<int> numberArray); // Constructor
+    string getResult(); // Get result by string type
+
+    private :
+    map<string, int, greater<string>> sortNumberArray(vector<int> numberArray); // Sortting numbers to connect biggetst number
+    string connectNumbers(map<string, int, greater<string>> sortedNumber); // Connect numbers in array order
+    string stretchNumber(int number); // The maximum number is 100,000. so, that function will strecth number by adding last number to 6.
+}

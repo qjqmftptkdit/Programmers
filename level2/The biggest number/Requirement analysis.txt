@@ -1,0 +1,5 @@
+1. Given zero and positive integer, Find the biggest number that is created by connecting numbers
+    ex1. Given number array [6, 10, 2], You can create the number array 
+         [6102, 6210, 1062, 1026, 2610, 2106] by connect numbers.
+         And the biggest number in array is the 6210. 
+         The answer should be returned by string type.
