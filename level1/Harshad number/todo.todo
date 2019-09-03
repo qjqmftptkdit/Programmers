@@ -1,0 +1,6 @@
+todo :
+    ✔ Create IsHarshadNumber class @done(19-09-03 10:32)
+        ✔ Case 1 : 10 -> true @done(19-09-03 10:32)
+        ✔ Case 2 : 12 -> true @done(19-09-03 10:32)
+        ✔ Case 3 : 11 -> false @done(19-09-03 10:32)
+        ✔ Case 4 : 13 -> false @done(19-09-03 10:32)

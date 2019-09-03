@@ -1,0 +1,12 @@
+class IsHarshadNumber
+{
+    private :
+    int number; // Given number
+
+    public :
+    IsHarshadNumber(int number); // Constructor
+    bool getResult();
+
+    private :
+    int getSumOfDigit(int number); // Return sum of digit in number
+};
