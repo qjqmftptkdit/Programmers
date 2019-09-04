@@ -1,0 +1,3 @@
+1. Create a function that returns h-index value.
+    1-1. Of the N treatise published by some scientist, If citation that is cited more than or equal to H is more than or equal to H and another treatise is less than or equal to H,
+         This scientist's H-Index is H.

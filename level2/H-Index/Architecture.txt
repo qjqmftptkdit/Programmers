@@ -1,0 +1,12 @@
+class getHIndex {
+    private :
+    vector<int> citations;
+    int LenOfCitation;
+
+    public :
+    getHIndex(vector<int> citations); // Constructor
+    int getResult(); // get H-Index for given citations
+
+    private :
+    vector<int> sortCitations(vector<int> citations); // Sort citations in descending
+}
