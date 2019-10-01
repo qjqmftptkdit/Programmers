@@ -1,0 +1,3 @@
+todo :  
+    ☐ Make CheckSkillTree class
+        ☐ case 1 : ("CBD", {"BACDE", "CBADF", "AECB", "BDA"}) -> 2

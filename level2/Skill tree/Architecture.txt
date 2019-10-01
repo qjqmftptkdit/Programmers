@@ -1,0 +1,17 @@
+1. Check if the skill_trees element exists in skill prior list.
+2. If 1 is correct, check if this element follow the order in prior list.
+
+class CheckSkillTree 
+{
+    private :
+    string skillPrior; // Skill Prior list to follow
+    vector<string> skill_trees; // Given skill trees
+
+    public :
+    CheckSkillTree(string skillPrior, vector<string> skill_trees); // Constructor
+    int getNumOfAvailiableSkillTree(); // Get num of available skill tree
+
+    private :
+    bool isExistsInList(char skill, string skillPrior); // Check if given skill exists in the skill prior list
+};
+
